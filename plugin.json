@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "kiro-skills",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Kit de trabajo de PDC para Kiro: paquete de skills, steering y plantillas en español, multi-stack (Angular, Flutter y mas). Incluye un indice de comandos y el flujo PRD/DERCAS (GitBook) -> Spec -> JIRA como primera capacidad; preparado para sumar skills de otros tipos de proyecto.",
   "author": {
     "name": "Vikingo IA",
