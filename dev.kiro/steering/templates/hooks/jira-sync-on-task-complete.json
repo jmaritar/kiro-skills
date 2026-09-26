@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Recordatorio: actualizar JIRA al completar tarea",
+      "trigger": "PostTaskExec",
+      "action": {
+        "type": "agent",
+        "prompt": "Se acaba de completar una tarea de un spec. Segun el steering '02-atlassian-defaults', actualiza en JIRA el issue asociado a esta tarea: transiciona su estado (ej. a 'Done' o 'In Review') y agrega un comentario breve con el resultado. Antes de escribir en JIRA, confirma con el usuario si aun no hay visto bueno. No inventes claves de issue: usa la clave registrada en tasks.md para la tarea."
+      }
+    }
+  ]
+}

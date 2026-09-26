@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Recordatorio: pasar JIRA a In Progress al iniciar tarea",
+      "trigger": "PreTaskExec",
+      "action": {
+        "type": "agent",
+        "prompt": "Esta por iniciarse una tarea de un spec. Segun el steering '02-atlassian-defaults', localiza el issue de JIRA asociado (clave registrada en tasks.md) y transicionalo a 'In Progress'. Si la tarea aun no tiene issue en JIRA, avisa al usuario en lugar de crearlo automaticamente. No realices escrituras en JIRA sin visto bueno si aun no se ha aprobado el plan."
+      }
+    }
+  ]
+}

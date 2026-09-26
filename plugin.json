@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kiro-skills",
+  "version": "1.0.0",
+  "description": "Power de PDC para Kiro: flujo PRD/DERCAS (GitBook) -> Spec -> JIRA. Incluye la skill de inicializacion de features desde una epica, un indice de comandos en español y el steering con defaults de Atlassian, contexto de GitBook, estimaciones y plantillas de Spec.",
+  "author": {
+    "name": "Jorge Arita",
+    "url": "https://github.com/jmaritar"
+  },
+  "keywords": [
+    "feature",
+    "epica",
+    "jira",
+    "gitbook",
+    "prd",
+    "dercas",
+    "casos de uso",
+    "spec",
+    "estimaciones",
+    "story points",
+    "comandos",
+    "ayuda",
+    "pdc",
+    "vikingo"
+  ],
+  "homepage": "https://github.com/jmaritar/kiro-skills",
+  "repository": "https://github.com/jmaritar/kiro-skills.git",
+  "license": "MIT"
+}

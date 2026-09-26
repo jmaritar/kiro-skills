@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Verificacion Angular al guardar TS/HTML",
+      "trigger": "PostFileSave",
+      "matcher": "src/.*\\.(ts|html)$",
+      "action": {
+        "type": "agent",
+        "prompt": "Se guardo un archivo de codigo Angular. Revisa la pestana #Problems del archivo actual y, si hay errores de compilacion o de plantilla introducidos por el ultimo cambio, resumelos y propone la correccion. No ejecutes 'ng serve' ni procesos de larga duracion; sugiere al usuario ejecutar 'npm run build' manualmente si hace falta una verificacion completa."
+      }
+    }
+  ]
+}
