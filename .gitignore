@@ -1,8 +1,8 @@
-# Contexto interno que NO debe compartirse
-dev.kiro/steering/features/*.md
-!dev.kiro/steering/features/INDEX.md
-!dev.kiro/steering/features/_TEMPLATE.md
-dev.kiro/steering/features/.rollback/
+# Contexto interno que NO debe compartirse (fichas de features en curso)
+*/steering/features/*.md
+!*/steering/features/INDEX.md
+!*/steering/features/_TEMPLATE.md
+*/steering/features/.rollback/
 
 # Secretos: nunca en el repo
 **/mcp.json

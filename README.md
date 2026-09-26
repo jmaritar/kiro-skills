@@ -1,112 +1,67 @@
-<p align="center">
-  <img src="assets/logo.svg" alt="Vikingo Skills" width="120" height="120" />
-</p>
+# Vikingo Skills — repositorio de Powers de PDC
 
-<h1 align="center">Vikingo Skills</h1>
+Coleccion de **Kiro Powers** de PDC, en español. Cada power aporta skills, steering y
+plantillas para tareas especificas. Modelado segun el repositorio oficial
+[kirodotdev/powers](https://github.com/kirodotdev/powers): un repo = varios powers, cada
+uno en su propia carpeta.
 
-<p align="center">Kit de trabajo de PDC para <a href="https://kiro.dev">Kiro</a> · multi-stack · en español · by Vikingo IA</p>
+Documentacion de Powers: https://kiro.dev/docs/powers/
+
+## Powers disponibles
+
+### vikingo-workflow
+**Vikingo Workflow** - Flujo de trabajo de PDC en español: PRD/DERCAS (GitBook) -> Spec de
+Kiro -> issues en JIRA. Incluye la skill de inicializacion de features desde una epica
+(`/feature-workspace-init`) y un indice de comandos (`/comandos`). Trae steering con defaults
+de Atlassian, contexto de GitBook, estimaciones (story points Fibonacci) y plantillas de Spec.
+
+**Skills:** comandos, feature-workspace-init
+**MCP Servers:** ninguno incluido (usa tus servidores `atlassian` y `gitbook` de `~/.kiro/settings/mcp.json`)
 
 ---
 
-Power (plugin) para Kiro que empaqueta la forma de trabajar de PDC: **skills**,
-**steering** de contexto y **plantillas** reutilizables, en español y pensado para
-**varios tipos de proyecto** (Angular, Flutter y los que vengan).
+> Proximos powers (roadmap): `vikingo-flutter`, `vikingo-angular`, `vikingo-worklog`.
 
-No es "solo el flujo PRD→JIRA": ese flujo es la **primera capacidad**. El kit esta
-preparado para ir sumando skills de otros stacks sin reorganizar nada.
-
-Sigue el estandar abierto [Agent Plugins](https://agent-plugins.org/) (`plugin.json`).
-
-## Capacidades actuales
-
-### Skills (se activan con `/`)
-
-| Comando | Categoria | Que hace |
-|---|---|---|
-| `/comandos` | General | Indice directo, en español, de todo lo disponible. Empieza aqui. |
-| `/feature-workspace-init` | Feature / JIRA | Inicializa el contexto de una feature desde una epica de JIRA (lee epica, ubica PRD/DERCAS en GitBook, lista casos de uso, valida issues y ofrece crear los faltantes, con confirmacion y rollback). |
-
-### Steering (se invoca con `#`)
-
-| Comando | Categoria | Aporta |
-|---|---|---|
-| `#workflow-prd-to-jira` | Feature / JIRA | El pipeline PRD/DERCAS → Spec → JIRA. |
-| `#estimations` | Transversal | Story points Fibonacci + equivalencia en tiempo. |
-| `#atlassian-defaults` | Feature / JIRA | Defaults de JIRA (sitio, cloudId, project key, tipos, customfields). |
-| `#gitbook-context` | Feature / JIRA | Organizacion y spaces de PRD/DERCAS en GitBook. |
-| `#spec-template` | Transversal | Molde de un Spec (requirements/design/tasks). |
-| `#features-index` | Feature / JIRA | Indice central de features trabajadas. |
-
-### Plantillas (se copian al proyecto)
-
-- `dev.kiro/steering/templates/specs/SPEC-GUIDE.md` — como instanciar un Spec.
-- `dev.kiro/steering/templates/hooks/*.json` — hooks de JIRA y verificacion Angular.
-
-## Roadmap (proximas capacidades)
-
-- `flutter-*` — skills para proyectos Flutter (scaffolding, patrones, revision).
-- `angular-*` — utilidades especificas de Angular mas alla del flujo actual.
-- `worklog` / `daily` — bitacora de trabajo y generacion del Daily.
-
-## Estructura
+## Estructura del repositorio
 
 ```
-vikingo-skills/
-├── plugin.json                 # manifiesto Agent Plugins (name: vikingo-skills)
-├── README.md · LICENSE · CONTRIBUTING.md · .gitignore
-├── assets/
-│   ├── logo.svg                # casco Vikingo con fondo (ver nota sobre logos abajo)
-│   └── logo-mark.svg           # casco Vikingo sin fondo
-├── skills/                     # una carpeta por skill (nombrada por dominio)
-│   ├── comandos/
-│   └── feature-workspace-init/
-└── dev.kiro/
-    └── steering/               # steering (#...) + plantillas
+kiro-skills/                     # repo = marketplace de powers
+├── README.md                    # este indice de powers
+├── CONTRIBUTING.md              # como agregar un power / una skill
+├── LICENSE
+└── vikingo-workflow/            # un power = una carpeta
+    ├── POWER.md                 # manifiesto (displayName, author, keywords, steering)
+    ├── assets/                  # logo del power (casco Vikingo)
+    ├── skills/
+    │   ├── comandos/
+    │   └── feature-workspace-init/
+    └── steering/                # steering (#...) + plantillas
 ```
 
-Convencion (Opcion 1, plano por dominio): cada skill es `skills/<nombre>/SKILL.md`,
-nombrada por su dominio (`feature-...`, `flutter-...`, `angular-...`). El steering
-transversal (estimaciones, spec) se comparte; el especifico de un stack va en su
-propio archivo. Ver `CONTRIBUTING.md` para agregar una skill nueva.
+Cada power usa el formato **`POWER.md`** (soporta `displayName` y `author`, que es lo que el
+IDE muestra como nombre y "by"). Ver `CONTRIBUTING.md` para agregar un power nuevo.
 
 ## Instalacion (Kiro IDE)
 
-Panel de **Powers** → **Add Custom Power**:
+Panel de **Powers** → **Add Custom Power** → **Import power from GitHub**, y apunta a la
+**carpeta del power** dentro del repo (no a la raiz). Por ejemplo:
 
-- **Probar en local:** *Import power from a folder* → selecciona esta carpeta → Install.
-- **Instalar / compartir desde GitHub:** *Import power from GitHub* →
-  `https://github.com/jmaritar/kiro-skills` → Install.
+```
+https://github.com/jmaritar/kiro-skills/tree/main/vikingo-workflow
+```
 
-La activacion es dinamica por `keywords`: Kiro carga el kit cuando tu tarea coincide.
-Para actualizar: Powers panel → el power → *Check for updates* → *Install updates*.
+O bien **Import power from a folder** y selecciona `vikingo-workflow/` para probar en local.
 
-## Configuracion previa (una vez por dispositivo)
+La activacion es dinamica por `keywords`: Kiro carga el power cuando tu tarea coincide.
 
-1. **MCP** en tu `~/.kiro/settings/mcp.json`: servidores `atlassian` y `gitbook`
-   (OAuth o token). Los secretos NO viven en este Power.
-2. **Rellenar placeholders** `<< ... >>` del steering con tus valores reales
-   (`02-atlassian-defaults.md`, `03-gitbook-context.md`).
+## Nota sobre el logo en el IDE
 
-## Nota sobre el logo y el "by"
-
-- El texto **"by Vikingo IA"** lo controla el campo `author.name` de `plugin.json`.
-  Si el IDE lo muestra vacio, es cache: **desinstala y reimporta** el power (o *Check for
-  updates* tras subir `version`).
-- El **logo** es el casco Vikingo oficial en SVG: `assets/logo.svg` (casco sobre fondo
-  azul redondeado) y `assets/logo-mark.svg` (solo el casco, sin fondo). Se ve en GitHub.
-- Importante: **el IDE NO muestra logo para powers personalizados/importados** hoy. Es una
-  funcionalidad pendiente de Kiro (ver issue kirodotdev/powers#103). La unica via para
-  branding en el panel es enviar el power al registro oficial: https://kiro.dev/powers/submit
-- El **logo** de la lista de Powers en el IDE proviene del registro curado de Kiro
-  (branding de partners); el schema de `plugin.json` no admite un campo de icono para
-  powers personalizados. Por eso incluimos `assets/logo.svg` para el README/GitHub y
-  para uso futuro, aunque el IDE aun no lo pinte para powers importados.
-
-## Relacion con Claude Skills
-
-Equivalente en Kiro de un repo `claude-skills`: mismo `SKILL.md`, distinto empaquetado
-(`plugin.json` en vez de `marketplace.json`). Detalle en
-`skills/comandos/references/empaquetado.md`.
+El casco Vikingo (`vikingo-workflow/assets/logo.svg`) se ve en GitHub, pero **el IDE aun no
+muestra logo para powers personalizados** — es una funcionalidad pendiente de Kiro
+(issue [kirodotdev/powers#103](https://github.com/kirodotdev/powers/issues/103)). El nombre
+"Vikingo Workflow" y el "by Vikingo IA" sí se muestran (vienen de `displayName` y `author`
+en `POWER.md`). Para branding con logo, el power debe entrar al registro oficial:
+https://kiro.dev/powers/submit
 
 ## Licencia
 

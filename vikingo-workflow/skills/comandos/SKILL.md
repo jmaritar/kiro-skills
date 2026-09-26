@@ -51,7 +51,7 @@ Para entender como se empaqueta y comparte esto (Power / plugin), ve `references
 
 ## Steering (se invoca con `#`)
 
-Incluido en este Power bajo `dev.kiro/steering/`. Al instalarse, queda invocable con `#`.
+Incluido en este Power bajo `steering/`. Al instalarse, queda invocable con `#`.
 
 | Comando | Que aporta al contexto |
 |---|---|
@@ -70,8 +70,8 @@ Incluido en este Power bajo `dev.kiro/steering/`. Al instalarse, queda invocable
 
 | Plantilla | Uso |
 |---|---|
-| `dev.kiro/steering/templates/specs/SPEC-GUIDE.md` | Como instanciar un Spec por feature en `<proyecto>/.kiro/specs/<feature>/`. |
-| `dev.kiro/steering/templates/hooks/*.json` | Hooks de ejemplo (JIRA start/sync, Angular build check) para copiar a `<proyecto>/.kiro/hooks/`. |
+| `steering/templates/specs/SPEC-GUIDE.md` | Como instanciar un Spec por feature en `<proyecto>/.kiro/specs/<feature>/`. |
+| `steering/templates/hooks/*.json` | Hooks de ejemplo (JIRA start/sync, Angular build check) para copiar a `<proyecto>/.kiro/hooks/`. |
 
 ## Flujos rapidos (recetas)
 

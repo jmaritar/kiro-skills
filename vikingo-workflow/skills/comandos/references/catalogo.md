@@ -32,7 +32,7 @@ Las skills viven en `skills/<nombre>/SKILL.md` dentro de este Power (y quedan co
 
 ## 2. Steering (se invoca con `#<nombre>`)
 
-En este Power el steering vive en `dev.kiro/steering/`. Al instalarse queda como steering
+En este Power el steering vive en `steering/`. Al instalarse queda como steering
 de usuario invocable con `#<name>`. El `name` del front-matter es el que se usa, no el
 nombre de archivo.
 
@@ -59,7 +59,7 @@ nombre de archivo.
 
 ## 3. Plantillas (no se invocan; se copian al proyecto)
 
-Viven en `dev.kiro/steering/templates/`. No tienen `name`, no entran con `#`.
+Viven en `steering/templates/`. No tienen `name`, no entran con `#`.
 
 | Plantilla | Destino en el proyecto | Uso |
 |---|---|---|
