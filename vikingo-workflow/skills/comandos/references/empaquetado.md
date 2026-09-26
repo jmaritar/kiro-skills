@@ -10,7 +10,7 @@ Guia en español para entender como esta empaquetado esto, como se relaciona con
 **La idea es la misma; el formato NO.**
 
 Un repo tipo `claude-skills` (Claude Code) es un *marketplace de plugins*. Este repo
-(`kiro-skills`) es el equivalente en Kiro: un **marketplace de Powers**, modelado segun el
+(`powers`) es el equivalente en Kiro: un **marketplace de Powers**, modelado segun el
 repo oficial `kirodotdev/powers` (un repo, varios powers, cada uno en su carpeta).
 
 | En un repo Claude Code | Equivalente en Kiro |
@@ -31,7 +31,7 @@ repo con carpetas de power, cada una con su `POWER.md`.
 ## 2. Estructura del repositorio (marketplace)
 
 ```
-kiro-skills/                     # repo = marketplace de powers
+powers/                          # repo = marketplace de powers
 ├── README.md                    # indice de powers
 ├── CONTRIBUTING.md
 ├── LICENSE
@@ -77,7 +77,7 @@ Instalar desde el panel de Powers:
 - **Carpeta local (para probar):** Add Custom Power → Import power from a folder →
   seleccionar la **carpeta del power** (`vikingo-workflow/`, NO la raiz) → Install.
 - **GitHub (para compartir):** Add Custom Power → Import power from GitHub →
-  `https://github.com/jmaritar/kiro-skills/tree/main/vikingo-workflow` → Install.
+  `https://github.com/jmaritar/powers/tree/main/vikingo-workflow` → Install.
 
 Actualizar: Powers panel → el power → Check for updates → Install updates.
 

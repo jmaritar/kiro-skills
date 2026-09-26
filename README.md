@@ -25,7 +25,7 @@ de Atlassian, contexto de GitBook, estimaciones (story points Fibonacci) y plant
 ## Estructura del repositorio
 
 ```
-kiro-skills/                     # repo = marketplace de powers
+powers/                          # repo = marketplace de powers
 ├── README.md                    # este indice de powers
 ├── CONTRIBUTING.md              # como agregar un power / una skill
 ├── LICENSE
@@ -47,7 +47,7 @@ Panel de **Powers** → **Add Custom Power** → **Import power from GitHub**, y
 **carpeta del power** dentro del repo (no a la raiz). Por ejemplo:
 
 ```
-https://github.com/jmaritar/kiro-skills/tree/main/vikingo-workflow
+https://github.com/jmaritar/powers/tree/main/vikingo-workflow
 ```
 
 O bien **Import power from a folder** y selecciona `vikingo-workflow/` para probar en local.

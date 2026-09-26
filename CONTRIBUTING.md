@@ -84,4 +84,4 @@ description: Crea una app. Palabras gatillo: flutter, app, scaffold
    (p.ej. `vikingo-workflow/`, NO la raiz del repo).
 2. Verifica: nombre (displayName), "by" (author), skills SIN advertencia y que responden.
 3. Recien entonces: commit + push. Para instalar desde GitHub se apunta a la carpeta:
-   `https://github.com/jmaritar/kiro-skills/tree/main/<power>`.
+   `https://github.com/jmaritar/powers/tree/main/<power>`.
