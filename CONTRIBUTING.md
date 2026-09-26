@@ -1,4 +1,4 @@
-# Como agregar skills a kiro-skills
+# Como agregar skills a Vikingo Skills
 
 Este kit es multi-stack. Suma capacidades (Flutter, Angular, otras) sin reorganizar
 el arbol. Sigue estas reglas para que todo cargue bien en Kiro.

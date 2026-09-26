@@ -1,14 +1,14 @@
 ---
 name: comandos
 description: >-
-  Indice directo, en español, de todos los comandos y utilidades del Power kiro-skills de
-  PDC (skills que se activan con "/", steering que se invoca con "#", plantillas y flujos).
+  Indice directo, en español, de todos los comandos y utilidades del Power Vikingo Skills
+  de PDC (skills que se activan con "/", steering que se invoca con "#", plantillas y flujos).
   Usar cuando el usuario pregunte que comandos hay, que puede hacer, como se invoca algo,
   "ayuda", "menu", "que skills tengo", "lista de comandos" o cuando no sepa como arrancar
   una tarea.
 metadata:
   author: jorge.arita
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Indice de comandos disponibles

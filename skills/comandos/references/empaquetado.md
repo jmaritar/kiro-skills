@@ -32,7 +32,7 @@ capa de empaquetado: en Claude es `marketplace.json`; en Kiro es `plugin.json` (
 ## 2. Estructura de este Power
 
 ```
-kiro-skills/
+vikingo-skills/
 ├── plugin.json                 # manifiesto Agent Plugins (name, version, keywords...)
 ├── README.md                   # que es, como instalar, lista de comandos
 ├── skills/

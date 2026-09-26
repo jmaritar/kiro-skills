@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="kiro-skills" width="120" height="120" />
+  <img src="assets/logo.svg" alt="Vikingo Skills" width="120" height="120" />
 </p>
 
-<h1 align="center">kiro-skills</h1>
+<h1 align="center">Vikingo Skills</h1>
 
 <p align="center">Kit de trabajo de PDC para <a href="https://kiro.dev">Kiro</a> · multi-stack · en español · by Vikingo IA</p>
 
@@ -51,11 +51,12 @@ Sigue el estandar abierto [Agent Plugins](https://agent-plugins.org/) (`plugin.j
 ## Estructura
 
 ```
-kiro-skills/
-├── plugin.json                 # manifiesto Agent Plugins
+vikingo-skills/
+├── plugin.json                 # manifiesto Agent Plugins (name: vikingo-skills)
 ├── README.md · LICENSE · CONTRIBUTING.md · .gitignore
 ├── assets/
-│   └── logo.svg                # logo del kit (ver nota sobre logos abajo)
+│   ├── logo.svg                # casco Vikingo con fondo (ver nota sobre logos abajo)
+│   └── logo-mark.svg           # casco Vikingo sin fondo
 ├── skills/                     # una carpeta por skill (nombrada por dominio)
 │   ├── comandos/
 │   └── feature-workspace-init/
@@ -89,8 +90,13 @@ Para actualizar: Powers panel → el power → *Check for updates* → *Install 
 ## Nota sobre el logo y el "by"
 
 - El texto **"by Vikingo IA"** lo controla el campo `author.name` de `plugin.json`.
+  Si el IDE lo muestra vacio, es cache: **desinstala y reimporta** el power (o *Check for
+  updates* tras subir `version`).
 - El **logo** es el casco Vikingo oficial en SVG: `assets/logo.svg` (casco sobre fondo
-  azul redondeado) y `assets/logo-mark.svg` (solo el casco, sin fondo).
+  azul redondeado) y `assets/logo-mark.svg` (solo el casco, sin fondo). Se ve en GitHub.
+- Importante: **el IDE NO muestra logo para powers personalizados/importados** hoy. Es una
+  funcionalidad pendiente de Kiro (ver issue kirodotdev/powers#103). La unica via para
+  branding en el panel es enviar el power al registro oficial: https://kiro.dev/powers/submit
 - El **logo** de la lista de Powers en el IDE proviene del registro curado de Kiro
   (branding de partners); el schema de `plugin.json` no admite un campo de icono para
   powers personalizados. Por eso incluimos `assets/logo.svg` para el README/GitHub y
