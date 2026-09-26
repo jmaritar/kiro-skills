@@ -1,18 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="kiro-skills">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#6D5EF6"/>
-      <stop offset="1" stop-color="#22B8CF"/>
-    </linearGradient>
-  </defs>
-  <rect x="0" y="0" width="120" height="120" rx="26" fill="#0E1116"/>
-  <rect x="6" y="6" width="108" height="108" rx="22" fill="none" stroke="url(#g)" stroke-width="3"/>
-  <!-- Slash de comando "/" -->
-  <path d="M74 30 L52 90" stroke="url(#g)" stroke-width="8" stroke-linecap="round"/>
-  <!-- Letra K estilizada -->
-  <g fill="#EDEFF3">
-    <rect x="30" y="34" width="9" height="52" rx="3"/>
-    <path d="M41 60 L64 34 L74 34 L49 62 L41 62 Z"/>
-    <path d="M49 58 L74 86 L63 86 L41 60 L49 58 Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Vikingo IA">
+  <title>Vikingo IA</title>
+  <!-- Fondo redondeado azul Vikingo -->
+  <rect x="0" y="0" width="256" height="256" rx="56" fill="#1F3078"/>
+  <g fill="#FFFFFF">
+    <!-- Cuerno izquierdo -->
+    <path d="M92 120
+             C 66 112, 50 92, 46 62
+             C 45 55, 52 51, 57 56
+             C 74 74, 86 92, 96 112
+             C 98 116, 96 121, 92 120 Z"/>
+    <!-- Cuerno derecho (espejo) -->
+    <path d="M164 120
+             C 190 112, 206 92, 210 62
+             C 211 55, 204 51, 199 56
+             C 182 74, 170 92, 160 112
+             C 158 116, 160 121, 164 120 Z"/>
+    <!-- Cupula del casco -->
+    <path d="M128 92
+             C 92 92, 66 120, 64 156
+             L 192 156
+             C 190 120, 164 92, 128 92 Z"/>
+    <!-- Pieza nasal / central (rebaje sobre la cupula) -->
+    <path d="M114 96
+             C 114 88, 120 82, 128 82
+             C 136 82, 142 88, 142 96
+             L 142 120
+             L 114 120 Z"/>
+    <!-- Banda inferior del casco -->
+    <path d="M60 158
+             C 88 150, 168 150, 196 158
+             L 200 186
+             C 200 192, 195 196, 189 194
+             C 168 187, 148 184, 134 184
+             C 132 187, 124 187, 122 184
+             C 108 184, 88 187, 67 194
+             C 61 196, 56 192, 56 186 Z"/>
   </g>
 </svg>

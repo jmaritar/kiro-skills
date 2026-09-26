@@ -4,7 +4,7 @@
 
 <h1 align="center">kiro-skills</h1>
 
-<p align="center">Kit de trabajo de PDC para <a href="https://kiro.dev">Kiro</a> · multi-stack · en español · by PDC</p>
+<p align="center">Kit de trabajo de PDC para <a href="https://kiro.dev">Kiro</a> · multi-stack · en español · by Vikingo IA</p>
 
 ---
 
@@ -88,7 +88,9 @@ Para actualizar: Powers panel → el power → *Check for updates* → *Install 
 
 ## Nota sobre el logo y el "by"
 
-- El texto **"by PDC"** lo controla el campo `author.name` de `plugin.json`.
+- El texto **"by Vikingo IA"** lo controla el campo `author.name` de `plugin.json`.
+- El **logo** (`assets/logo.svg`) es el casco Vikingo recreado como SVG vectorial a partir
+  del icono de marca.
 - El **logo** de la lista de Powers en el IDE proviene del registro curado de Kiro
   (branding de partners); el schema de `plugin.json` no admite un campo de icono para
   powers personalizados. Por eso incluimos `assets/logo.svg` para el README/GitHub y
