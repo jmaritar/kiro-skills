@@ -89,8 +89,8 @@ Para actualizar: Powers panel → el power → *Check for updates* → *Install 
 ## Nota sobre el logo y el "by"
 
 - El texto **"by Vikingo IA"** lo controla el campo `author.name` de `plugin.json`.
-- El **logo** (`assets/logo.svg`) es el casco Vikingo recreado como SVG vectorial a partir
-  del icono de marca.
+- El **logo** es el casco Vikingo oficial en SVG: `assets/logo.svg` (casco sobre fondo
+  azul redondeado) y `assets/logo-mark.svg` (solo el casco, sin fondo).
 - El **logo** de la lista de Powers en el IDE proviene del registro curado de Kiro
   (branding de partners); el schema de `plugin.json` no admite un campo de icono para
   powers personalizados. Por eso incluimos `assets/logo.svg` para el README/GitHub y
