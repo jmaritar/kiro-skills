@@ -1,6 +1,12 @@
 ---
 name: feature-workspace-init
-description: Inicializa el workspace de una nueva feature a partir de una epica de JIRA de forma conversacional y secuencial. Usar cuando el usuario quiera arrancar una feature nueva, pase una epica (URL o clave TTDEV-XXXXX), pida listar los casos de uso (CU) del PRD/DERCAS, elegir cuales trabajar, validar cuales CU ya existen como issues en la epica y cuales faltan, o crear los issues faltantes. Palabras gatillo: nueva feature, iniciar feature, epica, casos de uso, CU, PRD, DERCAS, crear issues, workspace de feature.
+description: >-
+  Inicializa el workspace de una nueva feature a partir de una epica de JIRA de forma
+  conversacional y secuencial. Usar cuando el usuario quiera arrancar una feature nueva,
+  pase una epica (URL o clave TTDEV-XXXXX), pida listar los casos de uso (CU) del
+  PRD/DERCAS, elegir cuales trabajar, validar cuales CU ya existen como issues en la epica
+  y cuales faltan, o crear los issues faltantes. Palabras gatillo - nueva feature, iniciar
+  feature, epica, casos de uso, CU, PRD, DERCAS, crear issues, workspace de feature.
 metadata:
   author: jorge.arita
   version: 1.0.0
